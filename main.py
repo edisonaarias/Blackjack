@@ -24,7 +24,11 @@ rank = card[1]
 
 if rank == "A":
     value = 11
-elif rank == "J":
+elif rank == "J" or rank == "Q" or rank == "K":
     value = 10
+else:
+    value = rank 
 
-print(card)     
+rank_dict = {"rank": rank, "value": value}
+
+print(rank_dict["rank"], rank_dict["value"])     
