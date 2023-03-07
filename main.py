@@ -33,3 +33,5 @@ class Deck:
             cards_dealt.append(card)
         return cards_dealt
 
+deck1 = Deck(1)
+print(deck1.cards)
